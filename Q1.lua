@@ -28,8 +28,8 @@ CHANGES: Got rid of the return value. This method is responsible for event handl
 @param player: object of player entity 
 @param storageValue: storage value -- REASON: adding flexibilty to accept a custom storage value. Assuming Storage is an object with its own methods getting/setting these values.
 --]]
-function onLogout(player, storageValue)  
+function onLogout(player)  
     if player:getStorageValue(storageValue) == 1 then  
-        addEvent(releaseStorage, storageValue, player)  
+        addEvent(releaseStorage, 1000, player)  
     end  
 end  
