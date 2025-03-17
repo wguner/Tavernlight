@@ -19,3 +19,4 @@ if (player->isOffline()) {
 IOLoginData::savePlayer(player);  
 }  
 }
+
